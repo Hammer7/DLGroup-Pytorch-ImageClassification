@@ -1,0 +1,3 @@
+Set username and email (One time setup)
+git config user.name "Your name"
+git config user.email "your@email.address"
