@@ -16,10 +16,10 @@ class NNModel(nn.Module):
         #VGG starts from 64 filter channel!
         #stage1
         layers += [nn.Conv2d(3, 32, kernel_size=3, padding=1),
-            nn.BatchNorm2d(32 ,momentum=0.99),
+            nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 32, kernel_size=3, padding=1),
-            nn.BatchNorm2d(32 ,momentum=0.99),
+            nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2)]
         #stage2

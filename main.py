@@ -2,6 +2,24 @@ import torch
 print (torch.__version__)
 
 
+#TODO:
+#1. move all hyperparameters to a config file (use yaml)
+#2. shuffle train data after every epoch
+#3. add residual blocks
+#4. add data augmentation
+#5. add early stopping
+#6. add tensorboard to show learning curves (loss, accuracy, error)
+#7. add visualization for each images with actual and predicted
+#8. try GlobalAveragePooling instead of flatten + dense layers
+
+
+#Optional TODO
+# add learning rate decay, dropout
+# adopt Tensorflow 2.4 best practices
+# play with different architectures and hyperparameters to see what works best and why
+# load data from disk for every iterations
+# code cleanup
+
 import os, sys, errno, shutil
 from pytorch_model import PytorchModel
 
